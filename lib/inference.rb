@@ -17,7 +17,7 @@ class Inference
 
   # Определяем наличие ввода имени.
   def name_empty?
-    @name == "" || @name == nil
+    @name == "" || @name.nil?
   end
 
   # Здороваемся с учетом ввода имени.

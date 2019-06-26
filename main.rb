@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 # Константа с номером версии программы.
-VERSION = 5
+VERSION = 5.0
 
 # Подключаем файлы из папки lib.
 require_relative 'lib/test'
@@ -33,6 +33,6 @@ rescue SystemCallError => error
   puts "Не найден файл: " + error.message
 rescue Interrupt
   puts "\nВы вышли из игры."
-# rescue
+rescue
   puts "Что-то пошло не так..."
 end
